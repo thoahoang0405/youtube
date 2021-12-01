@@ -1,0 +1,509 @@
+* {
+    width: auto;
+    height: auto;
+}
+body{
+    font-family: "Roboto","Arial",sans-serif;
+   
+    height: 100vh;
+
+}
+header{
+    cursor: pointer;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+   align-content: center;
+    position: fixed;
+    z-index: 1;
+    background: #ffff;
+    margin-top: -8px ;
+    
+    padding: 8px 0px ;
+    /* z-index: 1; */
+    
+}
+header .icon-bar{
+    display: flex;
+
+    
+    font-size: 24px;
+    margin:8px 24px;
+   
+
+
+}
+header .logo{
+    display: flex;
+    margin-top: -4px;
+
+    
+}
+header .logo img{
+    
+    
+    height: 50px;
+    width: 120px;
+}
+header .logo >span{
+    color: rgb(146, 145, 143);
+    font-size: 15px;
+}
+header .search{
+    display: flex;
+   
+    margin-left:  90px;
+    margin-right: 90px; 
+    
+
+}
+
+header .search .text-search {
+    
+  
+
+}
+header .search .text-search input{
+    width: 550px;
+    padding: 7px;
+    position: relative;
+    
+    /* height: 36px; */
+    font-size: 20px;
+    
+}
+header .search .btn-search{
+    display: flex;
+
+    width: 50px;
+    height: 42px;
+    text-align:center ;
+  
+    border:solid 1px rgba(114, 114, 114, 0.867);
+    cursor: pointer;
+   
+    
+    
+    
+}
+header .search .btn-search .icon-search{
+    font-size: 20px;
+   
+     margin: 10px;
+    background-color:#eeeeee ;
+    
+}
+.search.icon-micro-search{
+    display: flex;  
+    border:none;
+    
+    
+
+    
+
+}
+.search .icon-micro{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #eeee;
+    border-radius: 25px;
+    margin-left: 10px;
+    
+
+}
+header .app{
+    display: flex;
+
+   
+    margin: 0px 16px;
+   
+
+}
+header .app .icon-app{
+    font-size: 20px;
+    padding: 10px;
+    color:#3b3b3b;
+
+}
+header .set{
+    margin: 0px 12px;
+    display: flex;
+
+    
+    display: inline;
+    
+    float: left;
+
+
+}
+header .set .icon-set{
+    font-size: 20px;
+    padding: 10px;
+    color:#3b3b3b;
+
+
+}
+
+.main  .side-login .login,
+header .login{
+    cursor: pointer;
+    height: 42px;
+    width: 150px;
+    justify-content: space-around;
+  
+    display: flex;
+    border: solid 1px #065fd4;
+   
+    text-align: center;
+    
+    background-color: #fff;
+    
+   
+    
+  
+    
+}
+.main .side-login .login .icon-login,
+header .icon-login{
+    align-self:center;
+    font-size: 24px;
+    color: #065fd4;
+    
+
+}
+.main .side-login .login .text-login,
+header  .text-login{
+    align-self:center;
+    font-size: 15px;
+    color: #065fd4;
+
+    
+   
+}
+/* .main  #sidebar .item-sidebar{
+   height: 80px;
+} */
+.btn-search :hover .icon-search{
+    background-color: #c4c4c4;
+
+}
+.btn-search :hover{
+    background-color: #c4c4c4;
+}
+.main{
+    height: auto;
+    /* overflow: auto; */
+    
+    
+    
+    
+    
+
+}
+/* #sidebar{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+    
+ } */
+.sidebar-menu{
+    cursor: pointer;
+   
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 62px;
+    /* overflow-y: scroll ; */
+    height: 100vh;
+    font-size: 15px;
+    width: 250px;
+    position: fixed;
+    overflow: scroll;
+    
+
+    
+  
+
+}
+
+.sidebar-menu::-webkit-scrollbar{
+    width: 6px;
+    
+}
+/* .sidebar-menu::-webkit-scrollbar-thumb{
+    background:#0000;
+}
+.sidebar-menu::-webkit-scrollbar-track{
+    background-color: red;
+} */
+
+
+.main .sidebar-menu .side-browse,
+.main .sidebar-menu .side-settings ,
+/* .main .sidebar-menu .side-browse, */
+.main .sidebar-menu  .side-more ,
+.main .sidebar-menu .side-best,
+.main .sidebar-menu .side-icon-header{
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+   
+   
+
+}
+
+.main .sidebar-menu .side-icon-sec{
+    display: flex;
+    flex-direction: column;
+
+}
+.main .sidebar-menu .side-login{
+    margin-left: 24px;
+    margin-right: 12px;
+
+    
+
+}
+.item-sidebar{
+   
+    
+
+}
+.item-sidebar:hover {
+    background-color: #bbb7b7;
+}
+/* .icon-music,
+.icon-sport, .icon-gaming, .icon-new,
+.icon-live, .icon-360{
+    color: #fff;
+    background-color: rgb(44, 42, 42);
+    border-radius: 40%;
+} */
+
+.main .sidebar-menu .side-best .icon-music,
+.main .sidebar-menu .side-best .icon-sport,
+.main .sidebar-menu .side-best .icon-gaming,
+.main .sidebar-menu .side-best .icon-new,
+.main .sidebar-menu  .side-best .icon-live,
+.main .sidebar-menu  .side-more .icon-live,
+.main .sidebar-menu .side-best .icon-360,
+.main .sidebar-menu .side-browse .icon-browse,
+.main .sidebar-menu .side-settings .icon-set,
+.main .sidebar-menu .side-settings .icon-report,
+.main .sidebar-menu .side-settings .icon-help,
+.main .sidebar-menu .side-settings .icon-send,
+
+.main .sidebar-menu .side-icon-header .icon-home,
+.main .sidebar-menu .side-icon-header .icon-ex,
+.main .sidebar-menu .side-icon-header .icon-sub,
+.main .sidebar-menu .side-icon-sec  .icon-lib,
+.main .sidebar-menu .side-icon-sec  .icon-his{
+ 
+    float:left;
+    width: 20%;
+    margin-top:10px;
+    margin-left: 24px;
+    
+   
+   
+}
+.main .sidebar-menu .side-best >p,
+.main .sidebar-menu .side-browse >p,
+.main .sidebar-menu .side-settings >p,
+.main .sidebar-menu .side-more  >p,
+.main .sidebar-menu .side-icon-sec> p,
+.main .sidebar-menu .side-icon-header> p{
+    float:left;
+    width: 80%;
+    
+   
+   
+}
+.main .sidebar-menu .side-more >h4,
+.main .sidebar-menu .side-best >h4
+{
+    color:#7c7878;
+    margin-left: 24px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+hr{
+    width: 230px;
+    color:#fffbfb;
+}
+.main .sidebar-menu .side-footer >h5,
+.main .sidebar-menu .side-footer >p{
+    margin-left: 24px;
+    margin-right: 8px;
+    color:#7c7878;
+    word-spacing: 4px;
+    font-size: 12px;
+}
+.main .sidebar-menu .side-footer >p{
+    margin-bottom: 90px;
+}
+.main .menu {
+    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    border-top: solid 1px #d3d3d3;
+    border-bottom: solid 1px #d3d3d3;
+    padding-top: 8px ;
+    margin-left: 260px;
+    margin-top: 52px;
+    height: 52px;
+    text-align: center;
+    z-index: 1;
+    background: #ffff;
+}
+.btn-item{
+    height: 38px;
+    border-radius: 25px;
+    padding: 0px 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: solid 1px rgba(212, 207, 207, 0.933);
+    margin: 0px 12px;
+    text-align: center;
+   
+}
+.menu .next-icon{
+    margin-top: 12px;
+}
+.content{
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 260px;
+    
+    
+}
+.content-item{
+    background: #f9f9f9;
+    width: 23%;
+    margin-top: 120px;
+    float:left;
+    padding-top: 20px;
+    margin-left: 8px ;
+    margin-right: 8px ;
+    margin-bottom: -112px;
+
+
+}
+.img{
+    position: relative;
+
+}
+.img img{
+    width:100%
+}
+.img span{
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    bottom: 5px;
+    right: 7px;
+    padding: 0px 4px;
+
+}
+.icon-video {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    top:-120px;
+    right: 8px;
+    display: none;
+    
+}
+.content-item:hover .icon-more{
+    display: flex;
+}
+.icon-more{
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: -12px;
+    color:rgb(49, 48, 48);
+    margin-left:  -8px;
+
+    display: none;
+    
+
+}
+.content-item:hover .icon-video {
+    display: flex;
+}
+.icon-video i{
+    padding: 3px;
+    color:#fff;
+    background-color: black;
+    margin-bottom: 3px;
+    border-radius: 2px;
+
+}
+.avatar{
+    
+    float: left;
+    margin-top:12px ;
+    width: 15%;
+    margin-right:8px ;
+    border-radius: 50%;
+
+}
+.item-body{
+    position: relative;
+    float: left;
+    width: 80%;
+
+}
+.item-title{
+    
+    font-size: 15px;
+    margin: 8px 0px;
+    display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.item-name span{
+    font-size: 13px;
+    padding-top: 4px;
+}
+.item-name {
+    font-size: 15px;
+    color: #4d4b4b;
+
+}
+.item-view-time{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: -10px;
+    color: #4d4b4b;
+
+}
+.item-view-time .view{
+    float:left;
+    width:  50%;
+    margin-top: 0px;
+    
+
+}
+.item-view-time .item-time{
+    float:left;
+    width:  50%;
+
+}
+
+
+    
